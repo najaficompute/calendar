@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <form id="contact-form" action="bookingForm.php" method="POST">
+          <input id="name" type="text" name="name" placeholder="Full Name">
+          <input type="text" name="phone" placeholder="Phone Number">
+          <input id="form-date" type="text" name="date" value="Click on Date">
+          <input type="text" name="message" placeholder="send us a message">
+          <button type="submit" name="submit">Send Message</button>
+        </form>
+        <div class="calendar-dates">
+            <div>
+                 <select name="month" id="month" onchange="changeMonth()"> 
+                 <option value="0"> January</option>
+                 <option value="1"> Febuary</option>
+                 <option value="2"> March </option>
+                 <option value="3"> April</option>
+                 <option value="4"> May</option>
+                 <option value="5"> June</option>
+                 <option value="6"> July</option>
+                 <option value="7"> August</option>
+                 <option value="8"> September</option>
+                 <option value="9"> October</option>
+                 <option value="10"> November</option>
+                 <option value="11"> December</option>
+                </select>
+                <p id="todays-date"> hello </p>
+            </div>
+
+           
+            <div class="days">
+                <div class="day">SUN</div>
+                <div class="day">MON</div>
+                <div class="day">TUE</div>
+                <div class="day">WED</div>
+                <div class="day">THUR</div>
+                <div class="day">FRI</div>
+                <div class="day">SAT</div>
+            </div>
+            <div class="container">
+                <div id="calendarDays" class="dates"></div>
+            </div>
+            </div>
+        </div>
+</body>
+<script src="script.js"></script>
+</html>
